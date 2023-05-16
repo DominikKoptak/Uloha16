@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            font-size: x-large;
+            font-weight: 700;
+            font-family: fantasy;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            border: solid rgb(179, 79, 79);
+            background-color: rgba(189, 79, 79, 0.452);
+            border-style: groove;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50%;
+            width: 50%;
+            align-items: center;
+        }
+
+        input{
+            width: 50%;
+            -webkit-appearance: none;
+            margin: 5%;
+            margin-top: 0;
+
+
+        }
+        
+        button{
+            width: 50%;
+            margin: 5%;
+            font-family: fantasy;
+            font-weight: bolder;
+            background-color: rgb(153, 91, 80);
+
+        }
+        p{
+            margin: 
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <p>Názov filmu</p>
+        <input type="text" id="movieTitle" onfocus="this.value=''">
+        <p>Rok vydania</p>
+        <input type="number" id="year" onfocus="this.value=''">
+        <p>Herci</p>
+        <input type="text" id="actors" onfocus="this.value=''">
+        <button onclick="makeMovieObject()">Vložiť</button>
+        <button onclick="deleteLastInput()">Odstrániť posledný</button>
+        <button onclick="clearList()">Vymazať celý zoznam</button>
+    </div>
+
+
+        <script src="script.js"></script>
+</body>
+</html>
